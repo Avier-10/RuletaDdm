@@ -1,0 +1,43 @@
+:root {
+  --escala: clamp(300px, 70vw, 600px);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+body {
+  background: radial-gradient(
+    circle at center,
+    #552567 0%,
+    #3f1a4f 28%,
+    #240c31 65%,
+    #050106 100%
+  );
+
+  min-height: 100dvh;
+
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+#root {
+  width: calc(100% - 40px);
+  height: calc(100dvh - 40px);
+
+  margin: 20px;
+}
+
+.settingsButton {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 100;
+}

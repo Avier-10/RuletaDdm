@@ -1,0 +1,59 @@
+.gameOverScreen {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background:
+    radial-gradient(circle at top, rgba(177, 106, 255, 0.28), transparent 40%),
+    linear-gradient(135deg, #2e123c 0%, #3b184d 55%, #541d68 100%);
+  z-index: 2000;
+}
+
+.gameOverCard {
+  width: min(92vw, 520px);
+  border-radius: 24px;
+  padding: 32px 24px;
+  border: 1px solid rgba(185, 255, 155, 0.28);
+  background: linear-gradient(180deg, rgba(255, 248, 255, 0.98), rgba(246, 234, 255, 0.94));
+  box-shadow:
+    0 20px 80px rgba(0, 0, 0, 0.38),
+    0 0 0 1px rgba(52, 22, 67, 0.12) inset;
+  text-align: center;
+}
+
+.gameOverLabel {
+  margin: 0 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  color: #341643;
+  font-size: 0.82rem;
+}
+
+.gameOverCard h2 {
+  margin: 0;
+  color: #341643;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+}
+
+.gameOverText {
+  margin: 14px 0 0;
+  color: rgba(52, 22, 67, 0.8);
+  line-height: 1.5;
+}
+
+.gameOverButton {
+  margin-top: 24px;
+  padding: 12px 20px;
+  border: 1px solid #341643;
+  border-radius: 12px;
+  background: #e5d3ff;
+  color: #341643;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.gameOverButton:hover {
+  filter: brightness(1.03);
+}

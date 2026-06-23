@@ -1,0 +1,13 @@
+.girar{
+	animation-name: girar;
+	animation-duration: 5s;
+	animation-timing-function: cubic-bezier(0.1, 0, 0.18, 0.99);
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+}
+
+@keyframes girar {
+	100%{
+		transform: rotate(var(--giroRuleta));
+	}
+}
