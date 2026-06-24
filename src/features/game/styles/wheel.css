@@ -1,3 +1,25 @@
+:root {
+  --escala: min(70vw, 70vh);
+}
+
+@media (max-width: 1400px) {
+  :root {
+    --escala: min(65vw, 65vh);
+  }
+}
+
+@media (max-width: 1260px) {
+  :root {
+    --escala: min(50vw, 50vh);
+  }
+}
+
+@media (max-width: 1000px) {
+  :root {
+    --escala: min(45vw, 45vh);
+  }
+}
+
 svg{
 	border-radius: 50%;
 }
@@ -39,9 +61,8 @@ svg{
 #marcador {
   position: absolute;
   z-index: 20;
-  top: -100px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -120%);
   pointer-events: none;
 }
 

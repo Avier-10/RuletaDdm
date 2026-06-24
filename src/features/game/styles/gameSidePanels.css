@@ -287,3 +287,21 @@
     grid-template-columns: repeat(auto-fit, minmax(64px, 1fr));
   }
 }
+
+@media (max-width: 1400px) {
+  .gameBoard {
+    gap: 70px;
+  }
+}
+
+@media (max-width: 1260px) {
+  .gameBoard {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .gameBoard {
+    gap: 0px;
+  }
+}
